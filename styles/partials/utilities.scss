@@ -1,0 +1,28 @@
+.centered { text-align: center; }
+.float-right { float: right !important; }
+.float-left { float: left !important; }
+
+.mobile-hide {
+  display: none;
+  @media #{$tablet} { display: inline; }
+}
+
+.mobile-hide-inline-block {
+  display: none;
+  @media #{$tablet} { display: inline-block; }
+}
+
+.mobile-tablet-hide {
+  display: none;
+  @media #{$desktop} { display: inline-block; }
+}
+
+.tablet-hide {
+  display: inline-block;
+  @media #{$tablet} { display: none; }
+  @media #{$desktop} { display: inline-block; }
+}
+
+.desktop-hide {
+  @media #{$desktop} { display: none; }
+}

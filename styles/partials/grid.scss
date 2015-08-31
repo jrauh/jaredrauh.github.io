@@ -1,0 +1,25 @@
+//Tablet (640px)
+$tablet: "all and (min-width: 40em)" !default;
+
+//Desktop (1024px)
+$desktop: "all and (min-width: 64em)" !default;
+
+//Large-desktop (1536px)
+$large-desktop: "all and (min-width: 96em)" !default;
+
+.row {
+  @extend .clearfix;
+  margin: 0 auto;
+  max-width: 64rem;
+  @media #{$desktop} { max-width: 55rem; }
+  &.full {
+    max-width: 100%;
+  }
+}
+
+.column {
+  float: left;
+  margin: 0;
+  // padding: 0.5rem 1%;
+  &.half { width: 50%; }
+}
