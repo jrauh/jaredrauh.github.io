@@ -113,6 +113,7 @@ html {
 
 body {
   background-color: #f1f2f3;
+  color: #222;
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
   padding: 0;
@@ -444,19 +445,6 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
-body {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #222; }
-
-.float-left {
-  float: left; }
-
-.float-right {
-  float: right; }
-
-.no-padding {
-  padding: 0; }
-
 #slideshow {
   height: 25rem;
   background-color: #F2F4F5;
@@ -711,7 +699,24 @@ i {
     .blog-link i.twitter {
       padding-right: 1.6rem;
       margin: 0; } }
-/*-------about-------*/
+/*-------contact-------*/
+.contact-img {
+  background-image: url(img/mac.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 23rem;
+  height: 14rem;
+  margin: 5rem auto 2rem auto; }
+
+.contact-text {
+  font-size: 0.9rem;
+  color: #999;
+  text-align: center;
+  line-height: 1.7rem; }
+  .contact-text.large {
+    color: #2f5d67;
+    font-size: 1.2rem; }
+
 .about-section {
   padding: 2rem 1rem;
   height: auto; }
@@ -728,13 +733,13 @@ i {
     width: 100%;
     background-color: #FECE73; }
   .skill-bar.photoshop {
-    width: 90%;
+    width: 80%;
     background-color: #A5DBF6; }
   .skill-bar.indesign {
-    width: 80%;
+    width: 70%;
     background-color: #E973AB; }
   .skill-bar.html {
-    width: 80%;
+    width: 90%;
     background-color: #85C491; }
   .skill-bar.mac {
     width: 100%;
@@ -759,48 +764,19 @@ hr.separator {
   border-top: 1px solid #DDD;
   color: #BBB;
   text-align: center; }
+  hr.separator:after {
+    display: inline-block;
+    position: relative;
+    top: -0.75rem;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    background: #f1f2f3; }
   hr.separator.tools:after {
-    content: "Tools & Skills";
-    display: inline-block;
-    position: relative;
-    top: -0.75rem;
-    font-size: 0.9rem;
-    padding: 0 0.5rem;
-    background: white; }
+    content: "Tools & Skills"; }
   hr.separator.clients:after {
-    content: "Clients";
-    display: inline-block;
-    position: relative;
-    top: -0.75rem;
-    font-size: 0.9rem;
-    padding: 0 0.5rem;
-    background: white; }
+    content: "Clients"; }
   hr.separator.social:after {
-    content: "Social";
-    display: inline-block;
-    position: relative;
-    top: -0.75rem;
-    font-size: 0.9rem;
-    padding: 0 0.5rem;
-    background: white; }
-
-/*-------contact-------*/
-.contact-img {
-  background-image: url(img/mac.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 23rem;
-  height: 14rem;
-  margin: 5rem auto 2rem auto; }
-
-.contact-text {
-  font-size: 0.9rem;
-  color: #999;
-  text-align: center;
-  line-height: 1.7rem; }
-  .contact-text.large {
-    color: #2f5d67;
-    font-size: 1.2rem; }
+    content: "Social"; }
 
 .top-nav {
   background-color: #e9eaeb;

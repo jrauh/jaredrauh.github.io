@@ -1,0 +1,78 @@
+.about-section {
+  padding: 2rem 1rem;
+  height: auto;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.skill-bar {
+  height: 1rem;
+  border-radius: 50px;
+  margin-top: 4px;
+
+  &.illustrator {
+    width: 100%;
+    background-color: #FECE73;
+  }
+
+  &.photoshop {
+    width: 80%;
+    background-color: #A5DBF6;
+  }
+
+  &.indesign {
+    width: 70%;
+    background-color: #E973AB;
+  }
+
+  &.html {
+    width: 90%;
+    background-color: #85C491;
+  }
+
+  &.mac {
+    width: 100%;
+    background-color: #BFBCBC;
+  }
+}
+
+.about-photo {
+  background-image: url(img/about-photo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 14rem;
+  height: 14rem;
+  margin: 0 auto;
+}
+
+.social-button {
+  float: left;
+  width: 125px;
+  display: inline-block;
+}
+
+hr {
+  &.separator {
+    padding: 0;
+    border: none;
+    border-top: 1px solid #DDD;
+    color: #BBB;
+    text-align: center;
+    &:after {
+      display: inline-block;
+      position: relative;
+      top: -0.75rem;
+      font-size: 0.9rem;
+      padding: 0 0.5rem;
+      background: $gray-1;
+    }
+    
+    &.tools:after { content: "Tools & Skills"; }
+    &.clients:after { content: "Clients"; }
+    &.social:after { content: "Social"; }
+  }
+}
