@@ -4,22 +4,11 @@
   border-width: 0 0 4px 0;
 
   a {
-    color: #222;
-    text-decoration: none;
-  }
-
-  ul {
-    padding: 0rem;
-    margin: 0.7rem 0;
-    text-align: center;
-  }
-
-  li {
     border-radius: 50px;
-    display: inline;
-    font-size: 0.8rem;
+    color: #222;
     line-height: 37px;
-    list-style-type: none;
+    text-decoration: none;
+    outline: none;
     margin: 0 0.3rem;
     padding: 0.5rem 0.8rem;
     @media #{$tablet} {
@@ -32,7 +21,11 @@
       outline: none !important;
       transition: none;
     }
-    &:hover { background-color: $dark-gray; }
+    &:hover, &:focus {
+      background-color: $dark-gray;
+      color: #222;
+      outline: none;
+    }
     &.current {
       background-color: $rauh-teal;
       color: $light-gray;
@@ -41,5 +34,17 @@
         box-shadow: none;
       }
     }
+  }
+
+  ul {
+    padding: 0rem;
+    margin: 0.7rem 0;
+    text-align: center;
+  }
+
+  li {
+    display: inline;
+    font-size: 0.8rem;
+    list-style-type: none;
   }
 }
