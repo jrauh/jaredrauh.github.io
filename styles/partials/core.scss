@@ -17,53 +17,8 @@ section {
   padding: 0 2rem;
 }
 
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-.content {
-  @media #{$desktop} {
-    margin-top: 5rem;
-  }
-}
-
-hr.full {
-  border-top: none;
-  @media #{$desktop} {
-    border-top: 2px solid $gray-3;
-    margin: 0 0 1rem 0;
-  }
-}
-
-.product-wrapper {
-}
-
-.image-wrapper {
-  width: 100%;
-  transition: all 0.5s ease-out;
-  @media #{$desktop} {
-   width: 40%;
-  }
-}
-
-.content-wrapper {
-  padding: 1rem;
-  width: 100%;
-  @media #{$desktop} {
-    float: left;
-    margin: 0;
-    width: 60%;
-  }
-  &.right-aligned {
-    @media #{$desktop} {
-      float: right;
-    }
-  }
-}
-
 header {
-  @extend .clearfix;
+  @extend %clearfix;
   @include user-select(none);
   background-color: #FBFBFB;
   height: 4rem;
@@ -78,24 +33,6 @@ header {
     right: 0;
     left: 0;
     z-index: 2;
-  }
-
-  .header-icon {
-    background-image: url("../img/header-icon.svg");
-    background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    height: 4rem;
-    width: 8rem;
-    float: left;
-    margin: -0.7rem 0rem -2rem -1rem;
-
-    @media #{$tablet} {
-      height: 3.2rem;
-      margin: -0.2rem 0 -1rem -1.5rem;
-      width: 8rem;
-    }
   }
 
   ul { margin: 0; padding: 0; }
@@ -124,60 +61,6 @@ header {
   }
 }
 
-section {
-  padding: 1rem 0.5rem;
-  &.section-blue { background-color: $blue; }
-  &.section-green { background-color: $green; }
-  &.section-orange { background-color: $orange; }
-  &.section-red { background-color: $red; }
-  @media #{$tablet} { padding: 1rem }
-  @media #{$desktop} {
-    &.section-blue,
-    &.section-green,
-    &.section-orange,
-    &.section-red { background-color: transparent; }
-  }
-
-  h1, h2, h3, h4, p {
-    color: $white;
-    line-height: 0;
-    margin: 0.3rem 0 -0.4rem 0;
-    @media #{$desktop} { color: $gray-8; }
-  }
-
-  h4 {
-    font-size: 1.3rem;
-    margin-bottom: 1.6rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-}
-
-.image {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 21rem;
-  margin: 1rem auto 2rem;
-  vertical-align: middle;
-  width: 17rem;
-  &.array { height: 17rem; }
-  &.array-simple { background-image: url("../img/illustration_array_simple.svg"); }
-  &.array-detailed { background-image: url("../img/illustration_array_detailed.svg"); }
-  &.array-decal { background-image: url("../img/illustration_array_decal.svg"); }
-
-  &.contoured-diagonal {
-    background-image: url("../img/contoured-diagonal.png");
-  }
-
-  &.contoured-horizontal {
-    background-image: url("../img/contoured-horizontal.png");
-    height: 12rem;
-    margin: 5rem auto;
-  }
-}
-
 footer {
   background-color: $gray-3;
   border-top: 1px solid $gray-4;
@@ -188,87 +71,3 @@ footer {
   text-align: center;
   width: 100%;
 }
-
-.title {
-  background-image: url("../img/icon.svg");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  height: 85px;
-  max-width: 300px;
-  margin: 1.5rem auto;
-  transition: 0.4s ease;
-
-  @media #{$desktop} {
-    background-size: 100%;
-    height: 155px;
-  }
-}
-
-h1, h2, h3, h4 {
-  font-weight: 600;
-  color: white;
-  &.modal-title { color: #777; }
-}
-
-p {
-  color: #777;
-  font-size: 1rem;
-  line-height: 1.6rem;
-
-  &.section-title {
-    text-align: center;
-    color: #FFF;
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 0.5rem 0 0.8rem 0;
-    opacity: 0.5;
-  }
-}
-
-.container {
-  background-color: #EAEDF0;
-  width: 100%;
-  height: 10rem;
-  margin: 0 auto;
-}
-
-.about-container {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  max-width: 45rem;
-  h1 { color: $gray-8; }
-  h3 { color: $gray-5; font-weight: 400; }
-}
-
-.icon {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 60px;
-  height: 60px;
-  margin: 0 0.5rem;
-  float: left;
-  cursor: pointer;
-  &:hover { opacity: .7; }
-  &.etsy { background-image: url("../img/etsy.svg"); }
-  &.facebook { background-image: url("../img/facebook.svg"); }
-  &.twitter { background-image: url("../img/twitter.svg"); }
-}
-
-.clearfix:after, .row:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-* html .clearfix, * html .row { zoom: 1; }
-
-/* IE6 */
-*:first-child + html .clearfix, *:first-child + html .row { zoom: 1; }
-
-/* IE7 */

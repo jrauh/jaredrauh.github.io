@@ -1,0 +1,7 @@
+$mobile: "all and (max-width: 40em)" !default;
+$tablet: "all and (min-width: 40em)" !default; //640px
+$desktop: "all and (min-width: 64em)" !default; //1024px
+$large-desktop: "all and (min-width: 96em)" !default; //1536px
+
+$global-width: 1000px;
+$global-gutter: 0.5rem;
