@@ -45,45 +45,6 @@
   opacity: 0.9;
 }
 
-.column {
-  //Product Shot
-
-  &.thumbnail {
-    @include border-radius(5px);
-    background-color: #242424;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    margin: 0 0 1.5rem 0;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    width: 100%;
-
-    @media #{$tablet} {
-      margin: 1%;
-      padding-bottom: calc(36% + 3.5rem);
-      width: 48%;
-    }
-
-    @media #{$desktop} {
-      margin: 1%;
-      padding-bottom: calc(23.3333% + 3.5rem);
-      width: 31.3333%;
-    }
-
-    &:hover {
-      opacity: .6;
-    }
-  }
-
-  .product-title {
-    padding-bottom: 16%;
-    width: 31.3333%;
-  }
-}
-
 .shot {
   pointer-events: none;
 
