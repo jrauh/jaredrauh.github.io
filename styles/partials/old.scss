@@ -162,6 +162,7 @@ ul {
 }
 
 .shot-container {
+  cursor: pointer;
   float: left;
   position: relative;
   width: 100%;
@@ -169,6 +170,7 @@ ul {
   @media #{$tablet} {
     width: 50%;
     padding-bottom: 40%;
+    &:hover { opacity: 0.8; }
   }
   @media #{$desktop} {
     width: 33.3333333%;
@@ -182,21 +184,13 @@ ul {
 
 .shot {
   border-radius: 5px;
-  cursor: pointer;
   overflow: hidden;
   position: absolute;
   left: 0.5rem;
   right: 0.5rem;
   top: 0.5rem;
   bottom: 0.5rem;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  img {
-    width: 100%;
-  }
+  img { width: 100%; }
 }
 
 .fade {
@@ -205,6 +199,59 @@ ul {
    -moz-transition: opacity .25s ease-in-out;
    -webkit-transition: opacity .25s ease-in-out;
 }
+
+.bkg-blue {
+  box-shadow: 0px 3px 0px #75969C;
+}
+
+.bkg-white {
+  box-shadow: 0px 3px 0px #C6C8CA;
+}
+
+.bkg-abide {
+  box-shadow: 0px 3px 0px #413e39;
+}
+
+.bkg-chicago {
+  box-shadow: 0px 3px 0px #67ac3f;
+}
+
+.bkg-charreada {
+  box-shadow: 0px 3px 0px #BCAE9C;
+}
+
+.bkg-fall-blast {
+  box-shadow: 0px 3px 0px #821a17;
+}
+
+.bkg-frolf {
+  box-shadow: 0px 3px 0px #004E66;
+}
+
+.bkg-graduation {
+  box-shadow: 0px 3px 0px #748291;
+}
+
+.bkg-man-camp {
+  box-shadow: 0px 3px 0px #1D130C;
+}
+
+.bkg-outdoors {
+  box-shadow: 0px 3px 0px #A7A297;
+}
+
+.bkg-penthouse {
+  box-shadow: 0px 3px 0px #097599;
+}
+
+.bkg-roots {
+  box-shadow: 0px 3px 0px #4B5961;
+}
+
+.bkg-womens14 {
+  box-shadow: 0px 3px 0px #b4091c;
+}
+
 
 /* Mobile screens (480px) */
 @media (max-width: 480px) {

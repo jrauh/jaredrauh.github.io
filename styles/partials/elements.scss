@@ -45,16 +45,6 @@
   opacity: 0.9;
 }
 
-.shot {
-  pointer-events: none;
-
-  @media #{$tablet} {
-    position: absolute;
-  }
-
-  img { width: 100%; }
-}
-
 .shot-text {
   background-color: #535152;
   float: left;
