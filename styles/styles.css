@@ -15,6 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1325,7 +1326,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(36, 41, 44, 0.9);
   border-radius: 5px;
   color: #FFF;
-  font-family: monaco, Consolas, "Source Sans Pro", sans-serif;
+  font-family: monaco, 'Inconsolata', sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.2rem;

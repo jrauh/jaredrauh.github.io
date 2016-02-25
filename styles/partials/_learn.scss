@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
 //page styles
 .row {
   max-width: 40rem;
@@ -16,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba($gray-900c, .9);
   border-radius: 5px;
   color: $white;
-  font-family: monaco, Consolas, "Source Sans Pro", sans-serif;
+  font-family: monaco, 'Inconsolata', sans-serif;
   font-size: $font-size-small;
   font-weight: 600;
   line-height: 1.2rem;
