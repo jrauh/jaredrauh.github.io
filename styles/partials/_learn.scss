@@ -3,6 +3,11 @@
   max-width: 40rem;
 }
 
+section {
+  margin-top: 1rem;
+  padding: 1rem 0.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: $gray-600c;
 }
@@ -11,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba($gray-900c, .9);
   border-radius: 5px;
   color: $white;
-  font-family: "Monaco", sans-serif;
+  font-family: monaco, Consolas, "Source Sans Pro", sans-serif;
   font-size: $font-size-small;
   font-weight: 600;
   line-height: 1.2rem;

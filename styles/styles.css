@@ -590,6 +590,9 @@ p {
     .action.action-secondary:hover, .action.action-secondary:focus {
       opacity: 0.6; }
 
+html {
+  font-size: 1rem; }
+
 .row {
   margin: 0 auto;
   max-width: 64rem; }
@@ -693,15 +696,6 @@ p {
 @media all and (min-width: 64em) {
   .desktop-hide {
     display: none; } }
-
-html {
-  font-size: 14px; }
-  @media all and (min-width: 40em) {
-    html {
-      font-size: 16px; } }
-  @media all and (min-width: 64em) {
-    html {
-      font-size: 18px; } }
 
 body {
   background-color: #F1F2F3;
@@ -1320,6 +1314,10 @@ hr.separator {
 .row {
   max-width: 40rem; }
 
+section {
+  margin-top: 1rem;
+  padding: 1rem 0.5rem; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #6C747D; }
 
@@ -1327,7 +1325,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(36, 41, 44, 0.9);
   border-radius: 5px;
   color: #FFF;
-  font-family: "Monaco", sans-serif;
+  font-family: monaco, Consolas, "Source Sans Pro", sans-serif;
   font-size: 0.8rem;
   font-weight: 600;
   line-height: 1.2rem;

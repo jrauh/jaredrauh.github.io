@@ -5,3 +5,7 @@ $large-desktop: "all and (min-width: 96em)" !default; //1536px
 
 $global-width: 1000px;
 $global-gutter: 0.5rem;
+
+html {
+  font-size: $font-size-normal;
+}
