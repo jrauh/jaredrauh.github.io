@@ -1,0 +1,17 @@
+{
+  "name": "bower.json",
+  "homepage": "https://github.com/jrauh/jrauh.github.io",
+  "authors": [
+    "Jared Rauh <jared.rauh@samaritanministrires.org>"
+  ],
+  "description": "jaredrauh",
+  "main": "bower",
+  "moduleType": [],
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
+
+  "dependencies": {
+    "dashing-core": "~1.0.6"
+  }
+}

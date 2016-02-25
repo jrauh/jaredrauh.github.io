@@ -1,0 +1,42 @@
+//page styles
+.row {
+  max-width: 40rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $gray-600c;
+}
+
+.code {
+  background-color: rgba($gray-900c, .9);
+  border-radius: 5px;
+  color: $white;
+  font-family: "Monaco", sans-serif;
+  font-size: $font-size-small;
+  font-weight: 600;
+  line-height: 1.2rem;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0 2rem 0;
+  .code__arrow {
+    @include user-select(none);
+    font-size: $font-size-normal;
+  }
+  .code_number {
+    @include user-select(none);
+    background-color: rgba($gray-700c, .8);
+    border-radius: 5px 0 0 5px;
+    color: $gray-300c;
+    float: left;
+    margin: -0.8rem 1rem 0 -1rem;
+    padding: 0.8rem;
+    text-align: right;
+    width: 2.5rem;
+  }
+
+  .green { color: $green-300; }
+  .red { color: $red-300; }
+  .blue { color: $blue-200; }
+  .orange { color: $orange-200; }
+  .yellow { color: $yellow-200; }
+  .purple { color: $purple-50; }
+}

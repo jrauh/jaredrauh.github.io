@@ -1,3 +1,6 @@
+@import "../bower_components/normalize-scss/_normalize.scss";
+@import "../bower_components/dashing-core/sass/dashing-core";
+
 @import "partials/settings";
 @import "partials/grid";
 @import "partials/color";
@@ -10,5 +13,6 @@
 @import "partials/typography";
 @import "partials/old";
 @import "partials/about";
+@import "partials/learn";
 
 @import "partials/header";
