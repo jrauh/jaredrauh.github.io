@@ -65,8 +65,10 @@ header {
   padding: 0.8rem 1rem;
   position: relative;
   margin: 0.5rem 0 4rem 0;
+
   &.code--scss,
-  &.code--css {
+  &.code--css,
+  &.code--html {
     &:before {
       content: "";
       border-radius: 3px;
@@ -78,21 +80,32 @@ header {
       top: 0.5rem; right: 0.5rem;
     }
   }
-  &.code--scss {
+
+  &.code--scss,
+  &.code--html {
     margin-bottom: 1.5rem;
-    &:before {
-      content: "scss";
-      background-color: rgb(220, 165, 208);
-    }
   }
+
+  &.code--html:before {
+    content: "html";
+    background-color: $gray-300c;
+  }
+
+  &.code--scss:before {
+    content: "scss";
+    background-color: rgb(220, 165, 208);
+  }
+
   &.code--css:before {
     content: "css";
     background-color: $yellow-500;
   }
+
   .code__arrow {
     @include user-select(none);
     font-size: $font-size-normal;
   }
+
   .code_number {
     @include user-select(none);
     background-color: rgba($gray-700c, .8);
@@ -105,9 +118,14 @@ header {
     width: 2.5rem;
   }
 
+  .code_text {
+    margin: 0 -1rem 0 1.5rem;
+    li:hover { background-color: rgba($gray-700c, .5); }
+  }
+
   .green { color: $green-300; }
   .red { color: $red-300; }
-  .blue { color: $blue-200; }
+  .blue { color: $blue-300; }
   .orange { color: $orange-200; }
   .yellow { color: $yellow-200; }
   .purple { color: $purple-50; }

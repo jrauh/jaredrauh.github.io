@@ -70,6 +70,103 @@
 </section>
 
 <section class="row">
+  <h2>Nesting & Parent Selectors</h2>
+  <p>One of the many benefits of Sass is the cleanliness and organization it allows with nesting.</p>
+  <div class="code code--html">
+    <ul class="code_number">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <ul class="code_text">
+      <li>&lt;div class="card small"&gt;</li>
+      <li>&nbsp;&nbsp;&lt;h3 class="title"&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;Title</li>
+      <li>&nbsp;&nbsp;&lt;/h3&gt;</li>
+      <li>&lt;/div&gt;</li>
+    </ul>
+  </div>
+
+  <div class="code code--scss">
+    <ul class="code_number">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+    </ul>
+    <ul class="code_text">
+      <li>.card {</li>
+      <li>&nbsp;&nbsp;background-color: #FFF;</li>
+      <li>&nbsp;&nbsp;width: 15rem;</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;&nbsp;<span class="blue">&</span>:hover {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;opacity: .8;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;&nbsp;<span class="blue">&</span>.small {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;width: 10rem;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;</li>
+      <li>&nbsp;&nbsp;.title {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1.2rem;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>}</li>
+    </ul>
+  </div>
+
+  <div class="code code--css">
+    <ul class="code_number">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li>16</li>
+    </ul>
+    <ul class="code_text">
+      <li>.card {</li>
+      <li>&nbsp;&nbsp;background-color: #FFF;</li>
+      <li>&nbsp;&nbsp;width: 15rem;</li>
+      <li>}</li>
+      <li>&nbsp;</li>
+      <li>.card:hover {</li>
+      <li>&nbsp;&nbsp;opacity: .8;</li>
+      <li>}</li>
+      <li>&nbsp;</li>
+      <li>.card.small {</li>
+      <li>&nbsp;&nbsp;width: 10rem;</li>
+      <li>}</li>
+      <li>&nbsp;</li>
+      <li>.card .title {</li>
+      <li>&nbsp;&nbsp;font-size: 1.2rem;</li>
+      <li>}</li>
+    </ul>
+  </div>
+
   <h2>Variables</h2>
   <p>Variables offer a quick shortcut that can be reused throughout your stylesheet. By referencing the <span class="code-block">$</span> symbol, you are able to create a substitute that can be utilized anywhere within your project.</p>
   <div class="code code--scss">
