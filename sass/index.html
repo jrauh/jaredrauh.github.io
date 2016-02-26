@@ -215,17 +215,19 @@
       <li>10</li>
       <li>11</li>
     </ul>
-    <span class="blue">@mixin</span> user-select($value) {</br>
-    &nbsp;&nbsp;-webkit-user-select: $value;</br>
-    &nbsp;&nbsp;-moz-user-select: $value;</br>
-    &nbsp;&nbsp;-ms-user-select: $value;</br>
-    &nbsp;&nbsp;-o-user-select: $value;</br>
-    &nbsp;&nbsp;user-select: $value;</br>
-    }</br>
-    </br>
-    .card {</br>
-    &nbsp;&nbsp;<span class="blue">@include</span> user-select(none);</br>
-    }
+    <ul class="code_text">
+      <li><span class="blue">@mixin</span> user-select($value) {</li>
+      <li>&nbsp;&nbsp;-webkit-user-select: $value;</li>
+      <li>&nbsp;&nbsp;-moz-user-select: $value;</li>
+      <li>&nbsp;&nbsp;-ms-user-select: $value;</li>
+      <li>&nbsp;&nbsp;-o-user-select: $value;</li>
+      <li>&nbsp;&nbsp;user-select: $value;</li>
+      <li>}</li>
+      <li>&nbsp;&nbsp;</li>
+      <li>.card {</li>
+      <li>&nbsp;&nbsp;<span class="blue">@include</span> user-select(none);</li>
+      <li>}</li>
+    </ul>
   </div>
 
   <div class="code code--css">
@@ -238,13 +240,15 @@
       <li>6</li>
       <li>7</li>
     </ul>
-    .card {</br>
-    &nbsp;&nbsp;-webkit-user-select: none;</br>
-    &nbsp;&nbsp;-moz-user-select: none;</br>
-    &nbsp;&nbsp;-ms-user-select: none;</br>
-    &nbsp;&nbsp;-o-user-select: none;</br>
-    &nbsp;&nbsp;user-select: none;</br>
-    }
+    <ul class="code_text">
+      <li>.card {</li>
+      <li>&nbsp;&nbsp;-webkit-user-select: none;</li>
+      <li>&nbsp;&nbsp;-moz-user-select: none;</li>
+      <li>&nbsp;&nbsp;-ms-user-select: none;</li>
+      <li>&nbsp;&nbsp;-o-user-select: none;</li>
+      <li>&nbsp;&nbsp;user-select: none;</li>
+      <li>}</li>
+    </ul>
   </div>
 
   <h2>Extend</h2>
@@ -264,19 +268,21 @@
       <li>12</li>
       <li>13</li>
     </ul>
-    .card {</br>
-    &nbsp;&nbsp;@include border-radius(10px);</br>
-    &nbsp;&nbsp;background-color: $white;</br>
-    &nbsp;&nbsp;border: 2px solid $gray;</br>
-    &nbsp;&nbsp;margin: 1rem auto;</br>
-    &nbsp;&nbsp;padding: 1rem;</br>
-    }</br>
-    </br>
-    .card--dark {</br>
-      &nbsp;&nbsp;<span class="orange">@extend</span> .card;</br>
-      &nbsp;&nbsp;background-color: $gray-900c;</br>
-      &nbsp;&nbsp;border: none;</br>
-    }
+    <ul class="code_text">
+      <li>.card {</li>
+      <li>&nbsp;&nbsp;@include border-radius(10px);</li>
+      <li>&nbsp;&nbsp;background-color: $white;</li>
+      <li>&nbsp;&nbsp;border: 2px solid $gray;</li>
+      <li>&nbsp;&nbsp;margin: 1rem auto;</li>
+      <li>&nbsp;&nbsp;padding: 1rem;</li>
+      <li>}</li>
+      <li>&nbsp;</li>
+      <li>.card--dark {</li>
+      <li>&nbsp;&nbsp;<span class="orange">@extend</span> .card;</li>
+      <li>&nbsp;&nbsp;background-color: $gray-900c;</li>
+      <li>&nbsp;&nbsp;border: none;</li>
+      <li>}</li>
+    </ul>
   </div>
 </section>
 
