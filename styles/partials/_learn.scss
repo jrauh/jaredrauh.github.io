@@ -66,7 +66,6 @@ header {
   margin: 0.5rem 0 4rem 0;
   &.code--scss,
   &.code--css {
-    margin-bottom: 2rem;
     &:before {
       content: "";
       border-radius: 3px;
@@ -78,9 +77,12 @@ header {
       top: 0.5rem; right: 0.5rem;
     }
   }
-  &.code--scss:before {
-    content: "scss";
-    background-color: rgb(220, 165, 208);
+  &.code--scss {
+    margin-bottom: 1.5rem;
+    &:before {
+      content: "scss";
+      background-color: rgb(220, 165, 208);
+    }
   }
   &.code--css:before {
     content: "css";

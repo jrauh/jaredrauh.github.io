@@ -1350,21 +1350,21 @@ header.hero {
   padding: 0.8rem 1rem;
   position: relative;
   margin: 0.5rem 0 4rem 0; }
-  .code.code--scss, .code.code--css {
-    margin-bottom: 2rem; }
-    .code.code--scss:before, .code.code--css:before {
-      content: "";
-      border-radius: 3px;
-      color: #24292C;
-      line-height: 1rem;
-      opacity: .9;
-      padding: 0.2rem 0.2rem 0.3rem;
-      position: absolute;
-      top: 0.5rem;
-      right: 0.5rem; }
-  .code.code--scss:before {
-    content: "scss";
-    background-color: #dca5d0; }
+  .code.code--scss:before, .code.code--css:before {
+    content: "";
+    border-radius: 3px;
+    color: #24292C;
+    line-height: 1rem;
+    opacity: .9;
+    padding: 0.2rem 0.2rem 0.3rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem; }
+  .code.code--scss {
+    margin-bottom: 1.5rem; }
+    .code.code--scss:before {
+      content: "scss";
+      background-color: #dca5d0; }
   .code.code--css:before {
     content: "css";
     background-color: #F2E670; }
