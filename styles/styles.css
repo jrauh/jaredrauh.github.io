@@ -1305,7 +1305,7 @@ hr.separator {
 
 section {
   margin-top: 1rem;
-  padding: 1rem 0.5rem; }
+  padding: 1rem; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #575D64; }
@@ -1320,6 +1320,17 @@ p {
   color: #575D64;
   font-size: 16px;
   line-height: 1.5rem; }
+
+header.hero {
+  background-color: #FFF;
+  border: none;
+  height: auto;
+  padding: 2rem;
+  position: static; }
+  header.hero h1 {
+    color: #CF649A;
+    font-size: 2.5rem;
+    text-align: center; }
 
 .code {
   background-color: rgba(36, 41, 44, 0.9);

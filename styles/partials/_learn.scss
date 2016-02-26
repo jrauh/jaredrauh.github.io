@@ -7,7 +7,7 @@
 
 section {
   margin-top: 1rem;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,6 +28,21 @@ p {
   color: $gray-700c;
   font-size: 16px;
   line-height: 1.5rem;
+}
+
+header {
+  &.hero {
+    background-color: $white;
+    border: none;
+    height: auto;
+    padding: 2rem;
+    position: static;
+    h1 {
+      color: #CF649A;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
 }
 
 .code {
