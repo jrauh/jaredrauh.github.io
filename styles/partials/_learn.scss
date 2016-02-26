@@ -66,6 +66,10 @@ header {
   position: relative;
   margin: 0.5rem 0 4rem 0;
 
+  ::selection {
+    background-color: $gray-200c;
+  }
+
   &.code--scss,
   &.code--css,
   &.code--html {

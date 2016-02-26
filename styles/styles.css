@@ -1351,6 +1351,8 @@ header.hero {
   padding: 0.8rem 1rem;
   position: relative;
   margin: 0.5rem 0 4rem 0; }
+  .code ::selection {
+    background-color: #D2D5D9; }
   .code.code--scss:before, .code.code--css:before, .code.code--html:before {
     content: "";
     border-radius: 3px;
