@@ -5,7 +5,7 @@
 <!-- Enable responsive view on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <meta name="p:domain_verify" content="f11fb9b0671f49f237641bb5c4cfb52b"/>
-<title>Learn</title>
+<title>Learn Sass</title>
 <link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
 
@@ -16,6 +16,7 @@
 </section>
 <section class="row">
   <h2>Install SASS</h2>
+  <p>If you're on a Mac, installing SASS is extremely easy and can be done in just a few steps. Open your terminal and type in the following commands to install the Ruby Gem:</p>
   <div class="code">
     <div class="row">
       <span class="code__arrow red">&#8594; </span>
@@ -31,7 +32,25 @@
     </div>
   </div>
 
+  <h2>Set up your project</h2>
+  <p>Before you start using SASS, it may be helpful to install <a class="inline" href="https://git-scm.com/" target="blank">git</a>, which will allow you to quickly and efficiently manage your project files. Here are a few quick commands to get you going:</p>
+  <div class="code">
+    <div class="row">
+      <span class="code__arrow green">&#8594; </span>
+      git init new-project
+    </div>
+    <div class="row">
+      <span class="code__arrow green">&#8594; </span>
+      cd new-project
+    </div>
+    <div class="row">
+      <span class="code__arrow green">&#8594; </span>
+      touch index.html styles.css styles.scss
+    </div>
+  </div>
+
   <h2>Compile SASS to CSS</h2>
+  <p>Now that you have your files ready to go, you can start editing your stylesheet. Keep in mind, all of your work will be done in your .scss file and never in your .css file. Run this command to compile your SASS into CSS.</p>
   <div class="code">
     <span class="code__arrow green">&#8594; </span>
     sass -w input.scss:output.css

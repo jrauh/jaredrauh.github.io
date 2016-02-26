@@ -11,10 +11,6 @@ $light-gray: #E9EAEB;
 }
 
 p {
-  color: $secondary-color;
-  margin: 0;
-  padding: 0 0 1rem 0;
-  line-height: 1.5rem;
 
   &.skill {
     margin-top: -0.1rem;
@@ -318,12 +314,8 @@ ul {
     border-radius: 3px;
   }
 
-  a {
-    color: inherit;
-
-    &:visited {
-      color: #777;
-    }
+  a:visited {
+    color: #777;
   }
 }
 
