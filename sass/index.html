@@ -7,6 +7,7 @@
 <meta name="p:domain_verify" content="f11fb9b0671f49f237641bb5c4cfb52b"/>
 <title>Learn Sass</title>
 <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -22,8 +23,8 @@
 </section>
 
 <section class="row">
-  <h2>Install SASS</h2>
-  <p>If you're on a Mac, installing SASS is extremely easy and can be done in just a few steps. Open your terminal and type in the following commands to install the Ruby Gem:</p>
+  <h2>Install Sass</h2>
+  <p>If you're on a Mac, installing sass is extremely easy and can be done in just a few steps. Open your terminal and type in the following commands to install the Ruby Gem:</p>
   <div class="code">
     <div class="row">
       <span class="code__arrow red">&#8594; </span>
@@ -40,7 +41,7 @@
   </div>
 
   <h2>Set up your project</h2>
-  <p>Before you start using SASS, it may be helpful to install <a class="inline" href="https://git-scm.com/" target="blank">git</a>, which will allow you to quickly and efficiently manage your project files. Here are a few quick commands to get you going:</p>
+  <p>Before you start using sass, it may be helpful to install <a class="inline" href="https://git-scm.com/" target="blank">git</a>, which will allow you to quickly and efficiently manage your project files. Here are a few quick commands to get you going:</p>
   <div class="code">
     <div class="row">
       <span class="code__arrow green">&#8594; </span>
@@ -56,8 +57,8 @@
     </div>
   </div>
 
-  <h2>Compile SASS to CSS</h2>
-  <p>Now that you have your files ready to go, you can start editing your stylesheet. Keep in mind, all of your work will be done in your .scss file and never in your .css file. Run this command to compile your SASS into CSS.</p>
+  <h2>Compile sass to css</h2>
+  <p>Now that you have your files ready to go, you can start editing your stylesheet. Keep in mind, all of your edits will be done through your .scss file, never in your .css file. Run this command to compile your sass into css.</p>
   <div class="code">
     <span class="code__arrow green">&#8594; </span>
     sass -w input.scss:output.css
@@ -98,7 +99,7 @@
   </div>
 
   <h2>Mixins</h2>
-  <p>One simple way to use a mixin is to utilize it for vendor prefixed elements. To create a mixin, all you need to do is define a mixin name and a variable, which will be passed to each vendor prefix. This can now be incuded anywhere within your project by using an <span class="code-block">@include</span> followed by your mixin name and a desired value.</p>
+  <p>One simple way to use a mixin is to utilize it for vendor prefixed elements. To create a mixin, simply define a mixin name and a variable, which will be passed to each vendor prefix. This can now be referenced anywhere within your project by using an <span class="code-block">@include</span>, followed by the mixin name and a desired value.</p>
   <div class="code code--scss">
     <ul class="code_number">
       <li>1</li>
