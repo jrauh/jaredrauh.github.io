@@ -254,6 +254,7 @@
   </div>
 
   <h2>Extend</h2>
+  <p>The <span class="code-block">@extend</span> function allows one selector to inherit the styles of another selector. This can be especially useful when one class utilizes all of another class's styles, along with some of its own specific styles.</p>
   <div class="code code--scss">
     <ul class="code_number">
       <li>1</li>
@@ -267,22 +268,44 @@
       <li>9</li>
       <li>10</li>
       <li>11</li>
-      <li>12</li>
-      <li>13</li>
     </ul>
     <ul class="code_text">
-      <li>.card {</li>
-      <li>&nbsp;&nbsp;@include border-radius(10px);</li>
-      <li>&nbsp;&nbsp;background-color: $white;</li>
-      <li>&nbsp;&nbsp;border: 2px solid $gray;</li>
-      <li>&nbsp;&nbsp;margin: 1rem auto;</li>
+      <li>.column {</li>
       <li>&nbsp;&nbsp;padding: 1rem;</li>
+      <li>&nbsp;&nbsp;float: left;</li>
+      <li>&nbsp;&nbsp;margin: 0;</li>
+      <li>&nbsp;&nbsp;width: 100%;</li>
       <li>}</li>
       <li>&nbsp;</li>
-      <li>.card--dark {</li>
-      <li>&nbsp;&nbsp;<span class="orange">@extend</span> .card;</li>
-      <li>&nbsp;&nbsp;background-color: $gray-900c;</li>
-      <li>&nbsp;&nbsp;border: none;</li>
+      <li>.column-half {</li>
+      <li>&nbsp;&nbsp;<span class="orange">@extend</span> .column;</li>
+      <li>&nbsp;&nbsp;width: 50%;</li>
+      <li>}</li>
+    </ul>
+  </div>
+  <div class="code code--css">
+    <ul class="code_number">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+    </ul>
+    <ul class="code_text">
+      <li>.column, .column-half {</li>
+      <li>&nbsp;&nbsp;padding: 1rem;</li>
+      <li>&nbsp;&nbsp;float: left;</li>
+      <li>&nbsp;&nbsp;margin: 0;</li>
+      <li>&nbsp;&nbsp;width: 100%;</li>
+      <li>}</li>
+      <li>&nbsp;</li>
+      <li>.column-half {</li>
+        <li>&nbsp;&nbsp;width: 50%;</li>
       <li>}</li>
     </ul>
   </div>
