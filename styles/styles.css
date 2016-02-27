@@ -1336,9 +1336,12 @@ header.hero {
   padding: 2rem;
   position: static; }
   header.hero h1 {
-    color: #CF649A;
     font-size: 2.5rem;
     text-align: center; }
+    header.hero h1.bower {
+      color: #F1623B; }
+    header.hero h1.sass {
+      color: #CF649A; }
 
 .code {
   background-color: rgba(36, 41, 44, 0.9);

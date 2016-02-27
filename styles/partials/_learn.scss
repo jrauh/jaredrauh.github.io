@@ -47,9 +47,10 @@ header {
     padding: 2rem;
     position: static;
     h1 {
-      color: #CF649A;
       font-size: 2.5rem;
       text-align: center;
+      &.bower { color: #F1623B; } //#FFD235
+      &.sass { color: #CF649A; }
     }
   }
 }

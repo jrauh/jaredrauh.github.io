@@ -13,7 +13,7 @@
 <body>
 
 <header class="hero">
-  <h1>
+  <h1 class="sass">
     Learn Sass
   </h1>
 </header>
@@ -73,7 +73,7 @@
 
 <section class="row">
   <h2>Nesting & Parent Selectors</h2>
-  <p>One of the many benefits of Sass is the cleanliness and organization it allows with nesting.</p>
+  <p>Nesting within Sass allows for a cleaner interface, as it helps avoid having to consistently type out the name of your parent selector. If you ever need to specifically target where the parent selector should be placed, the <span class="code-block">&</span> symbol will allow you to determine that placement.</p>
   <div class="code code--html">
     <ul class="code_number">
       <li>1</li>
@@ -202,7 +202,7 @@
   </div>
 
   <h2>Mixins</h2>
-  <p>One simple way to use a mixin is to utilize it for vendor prefixed elements. To create a mixin, simply define a mixin name and a variable, which will be passed to each vendor prefix. This can now be referenced anywhere within your project by using an <span class="code-block">@include</span>, followed by the mixin name and a desired value.</p>
+  <p>One easy way to use the <span class="code-block">@mixin</span> directive is to apply it for vendor prefixed elements. To create a mixin, simply define a mixin name and a variable, which will be passed to each vendor prefix. This can now be referenced anywhere within your project by using an <span class="code-block">@include</span>, followed by the mixin name and a desired value.</p>
   <div class="code code--scss">
     <ul class="code_number">
       <li>1</li>
