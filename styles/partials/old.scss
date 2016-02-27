@@ -277,21 +277,10 @@ ul {
 
 
 /*-------blog-------*/
-.blog {
+.blog__old-code {
   max-width: 32rem;
   padding: 2rem 1rem 1rem 1rem;
   margin: 0 auto;
-}
-
-.card {
-  background-color: $light-gray;
-  border: solid $dark-gray;
-  border-width: 0 0 4px 0;
-  border-radius: 3px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  display: inline-block;
 }
 
 .blog-image {
