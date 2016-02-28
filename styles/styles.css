@@ -1277,8 +1277,48 @@ hr.separator {
   hr.separator.social:after {
     content: "Social"; }
 
+body {
+  background-color: #EDF1F2; }
+
 body.blog .row {
   max-width: 40rem; }
+
+.subnav {
+  background-color: rgba(221, 226, 230, 0.5);
+  display: block;
+  padding: 0 1rem;
+  width: 100%; }
+  .subnav li {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-bottom: 2px solid transparent;
+    color: #6C747D;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    text-transform: uppercase; }
+    .subnav li.visited {
+      color: #B6BBC2;
+      cursor: pointer;
+      margin-right: 1rem;
+      position: relative; }
+      .subnav li.visited:hover {
+        background-color: #DDE2E6;
+        border-bottom-color: #CF649A;
+        color: #6C747D; }
+      .subnav li.visited:after {
+        content: ">";
+        color: #C4C8CD;
+        font-family: "Inconsolata", monospace;
+        margin-top: 0.1rem;
+        pointer-events: none;
+        position: absolute;
+        right: -0.8rem; }
 
 .column, .column--learn {
   float: left;
@@ -1291,6 +1331,12 @@ body.blog .row {
       width: 33.33333%; } }
 
 .card {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: #FFF;
   border: solid #DDE2E6;
   border-width: 0 0 4px 0;
@@ -1304,12 +1350,6 @@ body.blog .row {
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     background-color: #fafafa;
     border: none;
     margin-top: 2px;
